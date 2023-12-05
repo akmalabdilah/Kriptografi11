@@ -38,7 +38,7 @@
 
 <b>Fungsi untuk mengenkripsi teks menggunakan One-Time Pad (OTP)</b>
 
-```
+```py
 def otp_encrypt(plain_text, key):
     encrypted_text = ''
     for i in range(len(plain_text)):
@@ -47,12 +47,14 @@ def otp_encrypt(plain_text, key):
         encrypted_text += chr(ord(char) ^ ord(key_char))
     return encrypted_text
 ```
-<b>Fungsi untuk mengonversi teks ke dalam bentuk biner</b>
-```
+
+<p>Fungsi untuk mengonversi teks ke dalam bentuk biner</p>
+
+```py
 def text_to_binary(text):
     binary_data = ''.join(format(ord(char), '08b') for char in text)
     return binary_data
-</p>
+```
 
 
 <h2>Foto Kode di Jupyter Notebook</h2>
